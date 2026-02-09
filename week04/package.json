@@ -1,0 +1,16 @@
+{"name": "application-development-1",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "json", "node"],
+    "coverageDirectory": "coverage"
+  }
+}
