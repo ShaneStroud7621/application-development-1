@@ -15,10 +15,10 @@ npm run dev
 ## Resources used
 - Node.js process docs: https://nodejs.org/api/process.html
 - npm scripts docs: https://docs.npmjs.com/cli/v10/using-npm/scripts
-- AI assistance: GitHub Copilot (GPT-5.2-Codex) in VS Code. Chat transcript is available in the local VS Code Copilot chat history; export or attach it if your instructor requires a link.
+- AI assistance: GitHub Copilot (GPT-5.2-Codex) in VS Code. If your instructor requires it, export the full chat transcript from VS Code Copilot chat history and attach or link it.
 
 ## Concept questions
 - **What `package.json` does:** It defines the project metadata, dependencies, and npm scripts used to run tasks like `npm start`.
 - **What `process.env` is:** It is the Node.js object that exposes environment variables provided by the operating system or shell.
 - **What `npm start` runs:** It runs the `start` script defined in `package.json` (here, `node index.js`).
-- **Bugs or errors encountered:** None during setup and execution.
+- **Bugs or errors encountered:** `git push` was rejected because the remote had new commits. I ran `git pull --rebase` and then `git push` to resolve it.
