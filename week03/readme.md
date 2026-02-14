@@ -15,7 +15,6 @@ npm run dev
 ## Resources used
 - Node.js process docs: https://nodejs.org/api/process.html
 - npm scripts docs: https://docs.npmjs.com/cli/v10/using-npm/scripts
-- AI assistance: GitHub Copilot (GPT-5.2-Codex) in VS Code. If your instructor requires it, export the full chat transcript from VS Code Copilot chat history and attach or link it.
 
 ## Concept questions
 - **What `package.json` does:** It defines the project metadata, dependencies, and npm scripts used to run tasks like `npm start`.
