@@ -1,0 +1,8 @@
+{
+  "name": "week03-nodejs-assignment",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js"
+  }
+}
