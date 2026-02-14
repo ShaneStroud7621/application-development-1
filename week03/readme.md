@@ -12,6 +12,8 @@
 
 `npm start` executes the command defined in the `"start"` script in `package.json`. In this project, it runs `node index.js`, which starts the Node.js application by executing the `index.js` file.
 
+**Note:** The `npm run dev` script uses inline environment variable syntax (`NODE_ENV=development`) which works on Unix-based systems (Linux/macOS) but may not work on Windows. For cross-platform compatibility, you could use the `cross-env` package or set environment variables using the appropriate method for your operating system.
+
 ## Learning Resources
 
 - [Node.js Official Documentation](https://nodejs.org/en/docs/)
