@@ -3,7 +3,6 @@ function notFound(req, res) {
     error: {
       code: "NOT_FOUND",
       message: `Route ${req.method} ${req.originalUrl} not found`,
-      details: null,
     },
   });
 }

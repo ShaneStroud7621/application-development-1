@@ -21,7 +21,7 @@ function getAll(req, res) {
 
   res.status(200).json({
     data: paginated,
-    pagination: {
+    meta: {
       page: pageNum,
       limit: limitNum,
       total: results.length,
@@ -73,8 +73,8 @@ function update(req, res, next) {
   const allowed = ["open", "closed"];
   if (status && !allowed.includes(status)) {
     const err = new Error(`status must be one of: ${allowed.join(", ")}`);
-    err.status = 400;
-    err.code = "BAD_REQUEST";
+    err.status = 409;
+    err.code = "CONFLICT";
     return next(err);
   }
   tasks[index] = {

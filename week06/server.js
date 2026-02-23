@@ -3,10 +3,12 @@ const app = express();
 
 const usersRouter = require("./routes/users");
 const tasksRouter = require("./routes/tasks");
+const logger = require("./middleware/logger");
 const errorHandler = require("./middleware/errorHandler");
 const notFound = require("./middleware/notFound");
 
 app.use(express.json());
+app.use(logger);
 
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Task Manager API — Week 06" });

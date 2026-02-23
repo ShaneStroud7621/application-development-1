@@ -4,7 +4,6 @@ function errorHandler(err, req, res, next) {
     error: {
       code: err.code || "INTERNAL_ERROR",
       message: err.message || "An unexpected error occurred",
-      details: err.details || null,
     },
   });
 }
