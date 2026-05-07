@@ -71,7 +71,7 @@ const updateUser = (req, res) => {
     }
 
     const duplicateEmail = users.find(
-      (item) => item.id !== userId && item.email.toLowerCase() === email.toLowerCase()
+      (item) => item.id !== parsed.id && item.email.toLowerCase() === email.toLowerCase()
     );
     if (duplicateEmail) {
       return sendError(res, 409, 'CONFLICT', 'A user with that email already exists');
