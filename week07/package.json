@@ -1,7 +1,7 @@
 {
-  "name": "week06",
+  "name": "week07",
   "version": "1.0.0",
-  "description": "Week 06 RESTful API assignment",
+  "description": "Week 07 middleware and request lifecycle assignment",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

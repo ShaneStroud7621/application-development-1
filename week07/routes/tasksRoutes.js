@@ -14,7 +14,7 @@ router.use((req, res, next) => {
 });
 
 router.use((req, res, next) => {
-	if (['POST', 'PATCH'].includes(req.method)) {
+	if (req.method === 'POST') {
 		return validateTaskTitle(req, res, next);
 	}
 
